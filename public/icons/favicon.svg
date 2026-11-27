@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1C1915"/>
+      <stop offset="55%" stop-color="#100E0C"/>
+      <stop offset="100%" stop-color="#090807"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="32%" r="60%">
+      <stop offset="0%" stop-color="#EAB349" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#EAB349" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCE4A6"/>
+      <stop offset="50%" stop-color="#EAB349"/>
+      <stop offset="100%" stop-color="#B9781A"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="116" fill="url(#glow)"/>
+  <rect x="14" y="14" width="484" height="484" rx="104" fill="none" stroke="url(#gold)" stroke-opacity="0.28" stroke-width="4"/>
+
+  <!-- Stylized Acoustic Equalizer + Golden Hook Emblem -->
+  <g transform="translate(256 256)">
+    <!-- Subtle inner acoustic ring -->
+    <circle cx="0" cy="0" r="168" fill="none" stroke="#EAB349" stroke-opacity="0.14" stroke-width="4"/>
+
+    <!-- Acoustic bars flanking the central hook -->
+    <rect x="-126" y="-44" width="24" height="88" rx="12" fill="url(#gold)" opacity="0.58"/>
+    <rect x="-82" y="-84" width="24" height="168" rx="12" fill="url(#gold)" opacity="0.82"/>
+
+    <!-- Bold stylized Hook (قلاب) curve -->
+    <path d="M 14 -128 L 14 34 C 14 90 -30 128 -78 128 C -106 128 -126 114 -138 96"
+          fill="none" stroke="url(#gold)" stroke-width="34" stroke-linecap="round"/>
+    <!-- Hook barbed tip -->
+    <circle cx="14" cy="-128" r="24" fill="url(#gold)"/>
+
+    <!-- Right acoustic bars -->
+    <rect x="64" y="-96" width="24" height="192" rx="12" fill="url(#gold)"/>
+    <rect x="108" y="-50" width="24" height="100" rx="12" fill="url(#gold)" opacity="0.65"/>
+  </g>
+</svg>
